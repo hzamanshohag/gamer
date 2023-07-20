@@ -320,6 +320,40 @@ main {
   margin: 10px 0;
 }
 
+.online_game_div {
+  position: relative;
+}
+
+.online_game_div .overlay {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #313131;
+  opacity: 0.5;
+}
+
+.online_game_div .play-button {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  height: 30px;
+  width: 30px;
+  transition: -0.7s ease;
+}
+
+.online_game_div:hover .play-button {
+  display: block;
+}
+.online_game_div:hover .online_game_div > .overlay {
+  display: block;
+}
 .action div p {
   text-align: center;
   color: #0b0223;
